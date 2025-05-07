@@ -15,7 +15,12 @@ import cssOverrides from '../../i18n/cssOverrides'
 
 const langs = ['en', 'ja']
 
-export default ({ chainId, environmentId, ...props }: ConnectButtonProps) => {
+export default ({
+	chainId,
+	environmentId,
+	dynamicSettings,
+	...props
+}: ConnectButtonProps) => {
 	const [locale, setLocale] =
 		useState<UndefinedOr<{ lang: string; dic: LocaleResource } | null>>(null)
 
@@ -38,7 +43,7 @@ export default ({ chainId, environmentId, ...props }: ConnectButtonProps) => {
 				walletConnectPreferredChains: [`eip155:${chainId ?? 137}`],
 				walletConnectors: [EthereumWalletConnectors],
 				cssOverrides: cssOverrides(locale?.lang),
-				social: { strategy: 'popup' },
+				social: dynamicSettings?.social ?? { strategy: 'popup' },
 			}}
 			locale={locale?.dic}
 		>

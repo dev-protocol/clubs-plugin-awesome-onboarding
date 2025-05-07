@@ -1,7 +1,12 @@
+import type { DynamicContextProps } from '@dynamic-labs/sdk-react-core'
+
 export type AwesomeOnboardingOptions = Readonly<{
 	chainId?: number
 	buttonClassName?: string
 	overrideClassName?: string
+	dynamicSettings?: {
+		social?: DynamicContextProps['settings']['social']
+	}
 }>
 
 export type AwesomeOnboardingEnvs = Readonly<{

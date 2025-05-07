@@ -9,7 +9,9 @@ import type { AwesomeOnboardingOptions } from './types.ts'
 import BrowserConnectButton_ from './.build/Entry/Entry'
 // import BrowserConnectButton_ from './components/Entry/Entry'
 
-const props = Astro.props as AwesomeOnboardingOptions
+type Props = AwesomeOnboardingOptions
+
+const props = Astro.props
 
 const { PUBLIC_DYNAMIC_ENVIRONMENT_ID } = import.meta.env
 ---
