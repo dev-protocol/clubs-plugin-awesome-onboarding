@@ -43,7 +43,7 @@ export default ({
 				walletConnectPreferredChains: [`eip155:${chainId ?? 137}`],
 				walletConnectors: [EthereumWalletConnectors],
 				cssOverrides: cssOverrides(locale?.lang),
-				social: dynamicSettings?.social ?? { strategy: 'popup' },
+				social: dynamicSettings?.social ?? { strategy: 'redirect' },
 			}}
 			locale={locale?.dic}
 		>
