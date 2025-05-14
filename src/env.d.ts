@@ -3,6 +3,7 @@
 interface ImportMetaEnv {
 	readonly PUBLIC_INFURA_KEY: string
 	readonly PUBLIC_DYNAMIC_ENVIRONMENT_ID: string
+	readonly PUBLIC_ALCHEMY_KEY: string
 }
 
 interface ImportMeta {

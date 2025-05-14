@@ -6,6 +6,7 @@ export type AwesomeOnboardingOptions = Readonly<{
 	overrideClassName?: string
 	dynamicSettings?: {
 		social?: DynamicContextProps['settings']['social']
+		rpcUrl?: { chain: 137; url: string }[]
 	}
 }>
 

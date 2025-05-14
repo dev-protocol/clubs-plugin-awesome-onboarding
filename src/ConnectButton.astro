@@ -7,13 +7,24 @@ import type { AwesomeOnboardingOptions } from './types.ts'
  * a package that has many dependencies that may not build successfully.
  */
 import BrowserConnectButton_ from './.build/Entry/Entry'
+import { whenDefined } from '@devprotocol/util-ts'
 // import BrowserConnectButton_ from './components/Entry/Entry'
 
 type Props = AwesomeOnboardingOptions
 
 const props = Astro.props
 
-const { PUBLIC_DYNAMIC_ENVIRONMENT_ID } = import.meta.env
+const { PUBLIC_DYNAMIC_ENVIRONMENT_ID, PUBLIC_ALCHEMY_KEY } = import.meta.env
+const polygonAlchemy = whenDefined(
+	PUBLIC_ALCHEMY_KEY,
+	(key) => `https://polygon-mainnet.g.alchemy.com/v2/${key}`,
+)
+const dynamicSettings: AwesomeOnboardingOptions['dynamicSettings'] = {
+	...props.dynamicSettings,
+	rpcUrl:
+		props.dynamicSettings?.rpcUrl ??
+		whenDefined(polygonAlchemy, (pol) => [{ chain: 137, url: pol }]),
+}
 ---
 
 <span class="group relative min-h-10 min-w-32">
@@ -26,5 +37,6 @@ const { PUBLIC_DYNAMIC_ENVIRONMENT_ID } = import.meta.env
 		client:only="react"
 		{...props}
 		environmentId={PUBLIC_DYNAMIC_ENVIRONMENT_ID}
+		dynamicSettings={dynamicSettings}
 	/>
 </span>

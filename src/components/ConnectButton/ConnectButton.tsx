@@ -2,7 +2,7 @@
 
 /* eslint-disable functional/no-expression-statements */
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { whenDefined, type UndefinedOr } from '@devprotocol/util-ts'
 import { EthereumWalletConnectors } from '@dynamic-labs/ethereum'
 import type { LocaleResource } from '@dynamic-labs/sdk-react-core'
@@ -17,12 +17,6 @@ import type { ConnectButtonProps } from '../../types'
 import cssOverrides from '../../i18n/cssOverrides'
 
 const langs = ['en', 'ja']
-
-const { PUBLIC_ALCHEMY_KEY } = import.meta.env
-const polygonAlchemy = whenDefined(
-	PUBLIC_ALCHEMY_KEY,
-	(key) => `https://polygon-mainnet.g.alchemy.com/v2/${key}`,
-)
 
 export default ({
 	chainId,
@@ -45,6 +39,11 @@ export default ({
 		}
 	}, [])
 
+	const polygonUrl = useMemo(
+		() => dynamicSettings?.rpcUrl?.find((x) => x.chain === 137),
+		[dynamicSettings?.rpcUrl],
+	)
+
 	return locale !== null ? (
 		<DynamicContextProvider
 			settings={{
@@ -53,11 +52,9 @@ export default ({
 				walletConnectors: [EthereumWalletConnectors],
 				cssOverrides: cssOverrides(locale?.lang),
 				social: dynamicSettings?.social ?? { strategy: 'redirect' },
-				overrides: whenDefined(polygonAlchemy, (url) => ({
+				overrides: whenDefined(polygonUrl, (pol) => ({
 					evmNetworks: (networks) =>
-						overrideNetworkRpcUrl(networks, {
-							'137': [url],
-						}),
+						overrideNetworkRpcUrl(networks, { '137': [pol.url] }),
 				})),
 			}}
 			locale={locale?.dic}
