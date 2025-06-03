@@ -104,5 +104,5 @@
 		"url": "https://github.com/dev-protocol/clubs-plugin-awesome-onboarding/issues"
 	},
 	"homepage": "https://github.com/dev-protocol/clubs-plugin-awesome-onboarding#readme",
-	"packageManager": "yarn@4.9.1"
+	"packageManager": "yarn@4.9.2"
 }
