@@ -461,7 +461,7 @@ const ResourceJapanese = {
 	},
 	dyn_login: {
 		title: {
-			all: 'サインイン',
+			all: 'ログイン',
 			all_wallet_list: 'あなたのウォレット',
 			wallet_only: 'あなたのウォレット',
 		},
@@ -549,7 +549,7 @@ const ResourceJapanese = {
 	// 	},
 	// },
 	dyn_widget: {
-		connect: 'サインイン',
+		connect: 'ログイン',
 	},
 	dyn_wallet_list: {
 		view_all: 'すべてのウォレットを見る',
