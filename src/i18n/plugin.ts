@@ -2,8 +2,8 @@ import type { ClubsI18nParts } from '@devprotocol/clubs-core'
 
 export const Strings = {
 	SignIn: {
-		en: 'Sign in',
-		ja: 'サインイン',
+		en: 'Login',
+		ja: 'ログイン',
 	},
 	PleaseConnectWallet: {
 		en: 'Connect your wallet',
