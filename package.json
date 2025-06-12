@@ -88,7 +88,7 @@
 		"sass": "1.89.2",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
-		"tailwindcss": "4.1.8",
+		"tailwindcss": "4.1.10",
 		"typescript": "5.5.4",
 		"typescript-eslint": "^8.23.0",
 		"viem": "2",
