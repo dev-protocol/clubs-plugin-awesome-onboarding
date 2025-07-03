@@ -94,7 +94,7 @@
 		"viem": "2",
 		"vitest": "^3.0.0",
 		"vue": "3.5.17",
-		"vue-tsc": "^2.0.19"
+		"vue-tsc": "^3.0.0"
 	},
 	"repository": {
 		"type": "git",
