@@ -1621,7 +1621,7 @@ __metadata:
     "@devprotocol/clubs-core": "npm:3.26.7"
     "@devprotocol/util-ts": "npm:4.0.0"
     "@dynamic-labs/ethereum": "npm:4.6.1"
-    "@dynamic-labs/ethers-v6": "npm:4.6.1"
+    "@dynamic-labs/ethers-v6": "npm:4.25.9"
     "@dynamic-labs/sdk-react-core": "npm:4.6.1"
     "@eslint/js": "npm:^9.19.0"
     "@rollup/plugin-commonjs": "npm:^28.0.0"
@@ -1716,6 +1716,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/assert-package-version@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/assert-package-version@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/logger": "npm:4.25.9"
+  checksum: 10c0/30741669488c96c1939d541f6a04596a2d9ecd293f9f40e63097ce1f2ec2673a1263dcc4e32aa0072f28bd9a54524aa4e4dffb4c39aa0fdf086329983bc032bd
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/assert-package-version@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/assert-package-version@npm:4.6.1"
@@ -1767,6 +1776,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/ethereum-core@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/ethereum-core@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/logger": "npm:4.25.9"
+    "@dynamic-labs/rpc-providers": "npm:4.25.9"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.728"
+    "@dynamic-labs/types": "npm:4.25.9"
+    "@dynamic-labs/utils": "npm:4.25.9"
+    "@dynamic-labs/wallet-book": "npm:4.25.9"
+    "@dynamic-labs/wallet-connector-core": "npm:4.25.9"
+  peerDependencies:
+    viem: ^2.28.4
+  checksum: 10c0/87119cc93abaaa49dd8b8bed8c08c188cd16427b194e6dd8b04494933a9aa9550162e35fe5c389c6590cde04466769e896a0af178aa200bcf26ec6815440d2b7
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/ethereum-core@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/ethereum-core@npm:4.6.1"
@@ -1809,17 +1836,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dynamic-labs/ethers-v6@npm:4.6.1":
-  version: 4.6.1
-  resolution: "@dynamic-labs/ethers-v6@npm:4.6.1"
+"@dynamic-labs/ethers-v6@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/ethers-v6@npm:4.25.9"
   dependencies:
-    "@dynamic-labs/assert-package-version": "npm:4.6.1"
-    "@dynamic-labs/ethereum-core": "npm:4.6.1"
-    "@dynamic-labs/wallet-connector-core": "npm:4.6.1"
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/ethereum-core": "npm:4.25.9"
+    "@dynamic-labs/wallet-connector-core": "npm:4.25.9"
   peerDependencies:
     ethers: ^6
-    viem: ^2.21.55
-  checksum: 10c0/2bc52575b71f57f79c0ce76e1282fe172523d17da175dc5fede890c9f8d293b60c1b5fc6df6f8f989178250414219c4062bf19894aee645157942c3b3ad62fa4
+    viem: ^2.28.4
+  checksum: 10c0/a286b283e4a76ad8cb119db08e933d1f47cb0983fd81ab04c733178008d4cf4baa2378c18daaa7525bda062657fd10e36ba4a38c441801e4260fa6c227e1b051
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/iconic@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/iconic@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/logger": "npm:4.25.9"
+    sharp: "npm:0.33.5"
+  peerDependencies:
+    react: ">=18.0.0 <20.0.0"
+    react-dom: ">=18.0.0 <20.0.0"
+  checksum: 10c0/8bce6ad652e612b8891397978952c153cc4eebc8628d455cac6991ccb6c25a597ae431d6fd03e4a1828381062b908fef20134ef8f5fa546e400eb9bdef8070ae
   languageName: node
   linkType: hard
 
@@ -1834,6 +1875,15 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
   checksum: 10c0/0aa9c7d6bd84f9a0534372cec079e2673173b680187706057e9117cd0773f3815781f42779f95d30f5586a16bb05d133cac8b37eba4dafd924501d36bd1a01ae
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/logger@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/logger@npm:4.25.9"
+  dependencies:
+    eventemitter3: "npm:5.0.1"
+  checksum: 10c0/fd27fd3394f60469c57b982578edd739cf9bc2200040381d7ed193398d96942fe7c031e045617d295537ee90f9d8b7ca25c48aff7557fd33c19ac7ab8e0df29f
   languageName: node
   linkType: hard
 
@@ -1862,6 +1912,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/rpc-providers@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/rpc-providers@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/types": "npm:4.25.9"
+  checksum: 10c0/7dba96931a3204bcfcd4527635eda6e8e720aff9494fb4d0929de7c70cdfe39b6294b0f7cfdff46ba257c5c955c82c623be2a4f6abd5c1f1fbe1b79abd144404
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/rpc-providers@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/rpc-providers@npm:4.6.1"
@@ -1876,6 +1936,13 @@ __metadata:
   version: 0.0.622
   resolution: "@dynamic-labs/sdk-api-core@npm:0.0.622"
   checksum: 10c0/f4530e6f2389d3cab7fca7d31156224eec39e886c46fc687fede3691fb779bc31805a4650e4f53d7e536798c47d63f6566c9107182dc91ecca3dbb6205ed6a7c
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/sdk-api-core@npm:0.0.728":
+  version: 0.0.728
+  resolution: "@dynamic-labs/sdk-api-core@npm:0.0.728"
+  checksum: 10c0/ff8a24198903f8767cdc0c47a4a750d73de8f66cb91d177b2ceb386a75e1a7a346bd359136cb00d78e6ebf268f47df0d2bb3532b4fff1e2ee506626cf2a4fc6d
   languageName: node
   linkType: hard
 
@@ -1923,6 +1990,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/types@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/types@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.728"
+  checksum: 10c0/593f71186bd11264d9c434acdfa2f25bfa3c2118e18cfa4bf7041064164ec2d3fa8952851d644e2d3363588e3a331b75879dd12a9bad6553801ed079a2ce58da
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/types@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/types@npm:4.6.1"
@@ -1930,6 +2007,21 @@ __metadata:
     "@dynamic-labs/assert-package-version": "npm:4.6.1"
     "@dynamic-labs/sdk-api-core": "npm:0.0.622"
   checksum: 10c0/7701f753e21c3ba79c82d0173298de5f3fb1d47ac1185875cda0a5637a32719a39e22530d5ba69c18b484c8165a88d89dd7d68c1a5ffe6a82998723fb8776e4f
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/utils@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/utils@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/logger": "npm:4.25.9"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.728"
+    "@dynamic-labs/types": "npm:4.25.9"
+    buffer: "npm:6.0.3"
+    eventemitter3: "npm:5.0.1"
+    tldts: "npm:6.0.16"
+  checksum: 10c0/27289b10881206b505764fa790d4ed5c0dda8a04f4bb03f09c5a648e73cc3682553c530bfa507f9cc971abb07307cb80c4594c71e684a126aa740ba2c55d876d
   languageName: node
   linkType: hard
 
@@ -1948,6 +2040,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/wallet-book@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/wallet-book@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/iconic": "npm:4.25.9"
+    "@dynamic-labs/logger": "npm:4.25.9"
+    "@dynamic-labs/utils": "npm:4.25.9"
+    eventemitter3: "npm:5.0.1"
+    util: "npm:0.12.5"
+    zod: "npm:4.0.5"
+  peerDependencies:
+    react: ">=18.0.0 <20.0.0"
+    react-dom: ">=18.0.0 <20.0.0"
+  checksum: 10c0/096d88140f118c0db9a8f8cabf3cff76e07c8f3df13d9042cd034b13c89414edcf7c7c5758ed50d1289e961721e4a53c541e7d7ef745dc52cd21e8a932287ee5
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/wallet-book@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/wallet-book@npm:4.6.1"
@@ -1963,6 +2073,22 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
   checksum: 10c0/d6415c0843910103e161616b14b409ebe984cab8a141b829261d3100cca5847eb5841e1c4c1757c20ec915758d57db3d74af8197d9a6e7873bc2260e495c786b
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/wallet-connector-core@npm:4.25.9":
+  version: 4.25.9
+  resolution: "@dynamic-labs/wallet-connector-core@npm:4.25.9"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.25.9"
+    "@dynamic-labs/logger": "npm:4.25.9"
+    "@dynamic-labs/rpc-providers": "npm:4.25.9"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.728"
+    "@dynamic-labs/types": "npm:4.25.9"
+    "@dynamic-labs/utils": "npm:4.25.9"
+    "@dynamic-labs/wallet-book": "npm:4.25.9"
+    eventemitter3: "npm:5.0.1"
+  checksum: 10c0/a84e819c26874e31d3eaee16b4cebc1593bd0c345673a829e20d3d8a5a9210452e8b1c265f550f2e5a7dd3615768b59981a33b70945c38f857180d330744d770
   languageName: node
   linkType: hard
 
@@ -15760,7 +15886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.33.3":
+"sharp@npm:0.33.5, sharp@npm:^0.33.3":
   version: 0.33.5
   resolution: "sharp@npm:0.33.5"
   dependencies:
@@ -18735,6 +18861,13 @@ __metadata:
   version: 3.22.4
   resolution: "zod@npm:3.22.4"
   checksum: 10c0/7578ab283dac0eee66a0ad0fc4a7f28c43e6745aadb3a529f59a4b851aa10872b3890398b3160f257f4b6817b4ce643debdda4fb21a2c040adda7862cab0a587
+  languageName: node
+  linkType: hard
+
+"zod@npm:4.0.5":
+  version: 4.0.5
+  resolution: "zod@npm:4.0.5"
+  checksum: 10c0/59449d731ca63849b6bcb14300aa6e2f042d440b3ed294b45c248519aec78780f85a5d1939a62c2ce82e9dc60afca77c8005e0a98d7517b0c2586d6c76940424
   languageName: node
   linkType: hard
 
