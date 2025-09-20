@@ -1791,7 +1791,7 @@ __metadata:
     "@devprotocol/clubs-core": "npm:3.28.0"
     "@devprotocol/util-ts": "npm:4.0.0"
     "@dynamic-labs/ethereum": "npm:4.6.1"
-    "@dynamic-labs/ethers-v6": "npm:4.6.1"
+    "@dynamic-labs/ethers-v6": "npm:4.32.0"
     "@dynamic-labs/sdk-react-core": "npm:4.6.1"
     "@eslint/js": "npm:^9.19.0"
     "@rollup/plugin-commonjs": "npm:^28.0.0"
@@ -1886,6 +1886,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/assert-package-version@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/assert-package-version@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/logger": "npm:4.32.0"
+  checksum: 10c0/e7596bd0aefd54bc880a8209018a25a391abf0dc4affeda9d18bfdc665c51dc95485e1e7da73df1b757e4ecbcd58fdcddf1c1cf1231630b7d74f710df7a1a538
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/assert-package-version@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/assert-package-version@npm:4.6.1"
@@ -1937,6 +1946,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/ethereum-core@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/ethereum-core@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/logger": "npm:4.32.0"
+    "@dynamic-labs/rpc-providers": "npm:4.32.0"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.762"
+    "@dynamic-labs/types": "npm:4.32.0"
+    "@dynamic-labs/utils": "npm:4.32.0"
+    "@dynamic-labs/wallet-book": "npm:4.32.0"
+    "@dynamic-labs/wallet-connector-core": "npm:4.32.0"
+  peerDependencies:
+    viem: ^2.28.4
+  checksum: 10c0/b1cb7a301dcf2c00914df668d694af01c60a784aa4568acc0ab7506150c2802818bd694ed91a15431667ff1e2b6c3877aaaa9a7cb70024e34a7ba2d2e303dd41
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/ethereum-core@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/ethereum-core@npm:4.6.1"
@@ -1979,17 +2006,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dynamic-labs/ethers-v6@npm:4.6.1":
-  version: 4.6.1
-  resolution: "@dynamic-labs/ethers-v6@npm:4.6.1"
+"@dynamic-labs/ethers-v6@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/ethers-v6@npm:4.32.0"
   dependencies:
-    "@dynamic-labs/assert-package-version": "npm:4.6.1"
-    "@dynamic-labs/ethereum-core": "npm:4.6.1"
-    "@dynamic-labs/wallet-connector-core": "npm:4.6.1"
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/ethereum-core": "npm:4.32.0"
+    "@dynamic-labs/wallet-connector-core": "npm:4.32.0"
   peerDependencies:
     ethers: ^6
-    viem: ^2.21.55
-  checksum: 10c0/2bc52575b71f57f79c0ce76e1282fe172523d17da175dc5fede890c9f8d293b60c1b5fc6df6f8f989178250414219c4062bf19894aee645157942c3b3ad62fa4
+    viem: ^2.28.4
+  checksum: 10c0/38396238b72de98d37ed73822eab824fa4052c1db06189eb7cc382ab20942242f70fc21b0e1d6a3b6aab445c1a610af8ce1e67761f82938f73df193b334af6b7
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/iconic@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/iconic@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/logger": "npm:4.32.0"
+    sharp: "npm:0.33.5"
+  peerDependencies:
+    react: ">=18.0.0 <20.0.0"
+    react-dom: ">=18.0.0 <20.0.0"
+  checksum: 10c0/9dd843a662ba0590acf78f807fe666408736c3d72ad8cda6346a9e909c0fe30ae20cefc3d64e0adfc351afdeef38e73e412366d93ee8f2b0326c509c4a3472ef
   languageName: node
   linkType: hard
 
@@ -2004,6 +2045,15 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
   checksum: 10c0/0aa9c7d6bd84f9a0534372cec079e2673173b680187706057e9117cd0773f3815781f42779f95d30f5586a16bb05d133cac8b37eba4dafd924501d36bd1a01ae
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/logger@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/logger@npm:4.32.0"
+  dependencies:
+    eventemitter3: "npm:5.0.1"
+  checksum: 10c0/109c4afc904e5a0ee3426a652c4f7b3a3ef0da8db720c3c9fb73d52d2bf9c35e742a6bbda675be4fbff4d6ba4233f1c070c4b6ee6b9f2ed68b28837b77ad0383
   languageName: node
   linkType: hard
 
@@ -2032,6 +2082,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/rpc-providers@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/rpc-providers@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/types": "npm:4.32.0"
+  checksum: 10c0/162d5c6df8dbf471dcef1cf3a0ecdfc27ef483b0aa7a7ac7a8f6191cab3f653c4e6ecf9178fc76f69b139005071a29b67c0ef86a7a015932c75d11c5bb406adc
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/rpc-providers@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/rpc-providers@npm:4.6.1"
@@ -2046,6 +2106,13 @@ __metadata:
   version: 0.0.622
   resolution: "@dynamic-labs/sdk-api-core@npm:0.0.622"
   checksum: 10c0/f4530e6f2389d3cab7fca7d31156224eec39e886c46fc687fede3691fb779bc31805a4650e4f53d7e536798c47d63f6566c9107182dc91ecca3dbb6205ed6a7c
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/sdk-api-core@npm:0.0.762":
+  version: 0.0.762
+  resolution: "@dynamic-labs/sdk-api-core@npm:0.0.762"
+  checksum: 10c0/a542fd043d5e0707f3428ecd93be8bf83a367571399a41de794c9255ac35080be1c45f1dc3085680fa43793fcaba09cb17b25543ec07baefd45d86d214da6244
   languageName: node
   linkType: hard
 
@@ -2093,6 +2160,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/types@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/types@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.762"
+  checksum: 10c0/9e5d845ee2f052c92d7cf522c05b3f9b51ffc59b95da38b8afe2a6f66240db760546b33f229c4cbd2e5c0e1e874c8ac9aaea75e73bff07792db36848c9c1e5c6
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/types@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/types@npm:4.6.1"
@@ -2100,6 +2177,21 @@ __metadata:
     "@dynamic-labs/assert-package-version": "npm:4.6.1"
     "@dynamic-labs/sdk-api-core": "npm:0.0.622"
   checksum: 10c0/7701f753e21c3ba79c82d0173298de5f3fb1d47ac1185875cda0a5637a32719a39e22530d5ba69c18b484c8165a88d89dd7d68c1a5ffe6a82998723fb8776e4f
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/utils@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/utils@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/logger": "npm:4.32.0"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.762"
+    "@dynamic-labs/types": "npm:4.32.0"
+    buffer: "npm:6.0.3"
+    eventemitter3: "npm:5.0.1"
+    tldts: "npm:6.0.16"
+  checksum: 10c0/bd92185db0668a5f100ee67f98744ed2ef72e4ec506f66027ec96802eeaa9187e4f40789077f44af0e5f1b4ff777992c9dc93886a12d33b327446490862f8538
   languageName: node
   linkType: hard
 
@@ -2118,6 +2210,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dynamic-labs/wallet-book@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/wallet-book@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/iconic": "npm:4.32.0"
+    "@dynamic-labs/logger": "npm:4.32.0"
+    "@dynamic-labs/utils": "npm:4.32.0"
+    eventemitter3: "npm:5.0.1"
+    util: "npm:0.12.5"
+    zod: "npm:4.0.5"
+  peerDependencies:
+    react: ">=18.0.0 <20.0.0"
+    react-dom: ">=18.0.0 <20.0.0"
+  checksum: 10c0/f2f14044ab7b74aa06d00ef811195e0630b5589e0a4563f3895d92924823bcf1e41f79b4a35b5c2e67f6ce19c30fd4dcca26e7691e7f46883d0e72e951a51744
+  languageName: node
+  linkType: hard
+
 "@dynamic-labs/wallet-book@npm:4.6.1":
   version: 4.6.1
   resolution: "@dynamic-labs/wallet-book@npm:4.6.1"
@@ -2133,6 +2243,22 @@ __metadata:
     react: ^18.0.0
     react-dom: ^18.0.0
   checksum: 10c0/d6415c0843910103e161616b14b409ebe984cab8a141b829261d3100cca5847eb5841e1c4c1757c20ec915758d57db3d74af8197d9a6e7873bc2260e495c786b
+  languageName: node
+  linkType: hard
+
+"@dynamic-labs/wallet-connector-core@npm:4.32.0":
+  version: 4.32.0
+  resolution: "@dynamic-labs/wallet-connector-core@npm:4.32.0"
+  dependencies:
+    "@dynamic-labs/assert-package-version": "npm:4.32.0"
+    "@dynamic-labs/logger": "npm:4.32.0"
+    "@dynamic-labs/rpc-providers": "npm:4.32.0"
+    "@dynamic-labs/sdk-api-core": "npm:0.0.762"
+    "@dynamic-labs/types": "npm:4.32.0"
+    "@dynamic-labs/utils": "npm:4.32.0"
+    "@dynamic-labs/wallet-book": "npm:4.32.0"
+    eventemitter3: "npm:5.0.1"
+  checksum: 10c0/a91fa7e72bdba89f47ec58f14e75ab6802f12452637aa0beca80f4ac2b46f755a51bed95721a3166518eb53513b6d98569a323b94587ebd4c580018a9d5fb02a
   languageName: node
   linkType: hard
 
@@ -2260,21 +2386,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emnapi/runtime@npm:^1.2.0, @emnapi/runtime@npm:^1.4.4":
+  version: 1.5.0
+  resolution: "@emnapi/runtime@npm:1.5.0"
+  dependencies:
+    tslib: "npm:^2.4.0"
+  checksum: 10c0/a85c9fc4e3af49cbe41e5437e5be2551392a931910cd0a5b5d3572532786927810c9cc1db11b232ec8f9657b33d4e6f7c4f985f1a052917d7cd703b5b2a20faa
+  languageName: node
+  linkType: hard
+
 "@emnapi/runtime@npm:^1.4.3":
   version: 1.4.3
   resolution: "@emnapi/runtime@npm:1.4.3"
   dependencies:
     tslib: "npm:^2.4.0"
   checksum: 10c0/3b7ab72d21cb4e034f07df80165265f85f445ef3f581d1bc87b67e5239428baa00200b68a7d5e37a0425c3a78320b541b07f76c5530f6f6f95336a6294ebf30b
-  languageName: node
-  linkType: hard
-
-"@emnapi/runtime@npm:^1.4.4":
-  version: 1.5.0
-  resolution: "@emnapi/runtime@npm:1.5.0"
-  dependencies:
-    tslib: "npm:^2.4.0"
-  checksum: 10c0/a85c9fc4e3af49cbe41e5437e5be2551392a931910cd0a5b5d3572532786927810c9cc1db11b232ec8f9657b33d4e6f7c4f985f1a052917d7cd703b5b2a20faa
   languageName: node
   linkType: hard
 
@@ -2929,6 +3055,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-darwin-arm64@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-darwin-arm64@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-darwin-arm64": "npm:1.0.4"
+  dependenciesMeta:
+    "@img/sharp-libvips-darwin-arm64":
+      optional: true
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@img/sharp-darwin-arm64@npm:0.34.3":
   version: 0.34.3
   resolution: "@img/sharp-darwin-arm64@npm:0.34.3"
@@ -2946,6 +3084,18 @@ __metadata:
   resolution: "@img/sharp-darwin-x64@npm:0.33.2"
   dependencies:
     "@img/sharp-libvips-darwin-x64": "npm:1.0.1"
+  dependenciesMeta:
+    "@img/sharp-libvips-darwin-x64":
+      optional: true
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@img/sharp-darwin-x64@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-darwin-x64@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-darwin-x64": "npm:1.0.4"
   dependenciesMeta:
     "@img/sharp-libvips-darwin-x64":
       optional: true
@@ -2972,6 +3122,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-libvips-darwin-arm64@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@img/sharp-libvips-darwin-arm64@npm:1.0.4"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@img/sharp-libvips-darwin-arm64@npm:1.2.0":
   version: 1.2.0
   resolution: "@img/sharp-libvips-darwin-arm64@npm:1.2.0"
@@ -2982,6 +3139,13 @@ __metadata:
 "@img/sharp-libvips-darwin-x64@npm:1.0.1":
   version: 1.0.1
   resolution: "@img/sharp-libvips-darwin-x64@npm:1.0.1"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@img/sharp-libvips-darwin-x64@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@img/sharp-libvips-darwin-x64@npm:1.0.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -3000,6 +3164,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-libvips-linux-arm64@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@img/sharp-libvips-linux-arm64@npm:1.0.4"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@img/sharp-libvips-linux-arm64@npm:1.2.0":
   version: 1.2.0
   resolution: "@img/sharp-libvips-linux-arm64@npm:1.2.0"
@@ -3010,6 +3181,13 @@ __metadata:
 "@img/sharp-libvips-linux-arm@npm:1.0.1":
   version: 1.0.1
   resolution: "@img/sharp-libvips-linux-arm@npm:1.0.1"
+  conditions: os=linux & cpu=arm & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@img/sharp-libvips-linux-arm@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@img/sharp-libvips-linux-arm@npm:1.0.5"
   conditions: os=linux & cpu=arm & libc=glibc
   languageName: node
   linkType: hard
@@ -3035,6 +3213,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-libvips-linux-s390x@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@img/sharp-libvips-linux-s390x@npm:1.0.4"
+  conditions: os=linux & cpu=s390x & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@img/sharp-libvips-linux-s390x@npm:1.2.0":
   version: 1.2.0
   resolution: "@img/sharp-libvips-linux-s390x@npm:1.2.0"
@@ -3045,6 +3230,13 @@ __metadata:
 "@img/sharp-libvips-linux-x64@npm:1.0.1":
   version: 1.0.1
   resolution: "@img/sharp-libvips-linux-x64@npm:1.0.1"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@img/sharp-libvips-linux-x64@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@img/sharp-libvips-linux-x64@npm:1.0.4"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
@@ -3063,6 +3255,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-libvips-linuxmusl-arm64@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@img/sharp-libvips-linuxmusl-arm64@npm:1.0.4"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
 "@img/sharp-libvips-linuxmusl-arm64@npm:1.2.0":
   version: 1.2.0
   resolution: "@img/sharp-libvips-linuxmusl-arm64@npm:1.2.0"
@@ -3073,6 +3272,13 @@ __metadata:
 "@img/sharp-libvips-linuxmusl-x64@npm:1.0.1":
   version: 1.0.1
   resolution: "@img/sharp-libvips-linuxmusl-x64@npm:1.0.1"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@img/sharp-libvips-linuxmusl-x64@npm:1.0.4":
+  version: 1.0.4
+  resolution: "@img/sharp-libvips-linuxmusl-x64@npm:1.0.4"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
@@ -3089,6 +3295,18 @@ __metadata:
   resolution: "@img/sharp-linux-arm64@npm:0.33.2"
   dependencies:
     "@img/sharp-libvips-linux-arm64": "npm:1.0.1"
+  dependenciesMeta:
+    "@img/sharp-libvips-linux-arm64":
+      optional: true
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@img/sharp-linux-arm64@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-linux-arm64@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-linux-arm64": "npm:1.0.4"
   dependenciesMeta:
     "@img/sharp-libvips-linux-arm64":
       optional: true
@@ -3113,6 +3331,18 @@ __metadata:
   resolution: "@img/sharp-linux-arm@npm:0.33.2"
   dependencies:
     "@img/sharp-libvips-linux-arm": "npm:1.0.1"
+  dependenciesMeta:
+    "@img/sharp-libvips-linux-arm":
+      optional: true
+  conditions: os=linux & cpu=arm & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@img/sharp-linux-arm@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-linux-arm@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-linux-arm": "npm:1.0.5"
   dependenciesMeta:
     "@img/sharp-libvips-linux-arm":
       optional: true
@@ -3156,6 +3386,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-linux-s390x@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-linux-s390x@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-linux-s390x": "npm:1.0.4"
+  dependenciesMeta:
+    "@img/sharp-libvips-linux-s390x":
+      optional: true
+  conditions: os=linux & cpu=s390x & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@img/sharp-linux-s390x@npm:0.34.3":
   version: 0.34.3
   resolution: "@img/sharp-linux-s390x@npm:0.34.3"
@@ -3173,6 +3415,18 @@ __metadata:
   resolution: "@img/sharp-linux-x64@npm:0.33.2"
   dependencies:
     "@img/sharp-libvips-linux-x64": "npm:1.0.1"
+  dependenciesMeta:
+    "@img/sharp-libvips-linux-x64":
+      optional: true
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@img/sharp-linux-x64@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-linux-x64@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-linux-x64": "npm:1.0.4"
   dependenciesMeta:
     "@img/sharp-libvips-linux-x64":
       optional: true
@@ -3204,6 +3458,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-linuxmusl-arm64@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-linuxmusl-arm64@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-linuxmusl-arm64": "npm:1.0.4"
+  dependenciesMeta:
+    "@img/sharp-libvips-linuxmusl-arm64":
+      optional: true
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
 "@img/sharp-linuxmusl-arm64@npm:0.34.3":
   version: 0.34.3
   resolution: "@img/sharp-linuxmusl-arm64@npm:0.34.3"
@@ -3221,6 +3487,18 @@ __metadata:
   resolution: "@img/sharp-linuxmusl-x64@npm:0.33.2"
   dependencies:
     "@img/sharp-libvips-linuxmusl-x64": "npm:1.0.1"
+  dependenciesMeta:
+    "@img/sharp-libvips-linuxmusl-x64":
+      optional: true
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@img/sharp-linuxmusl-x64@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-linuxmusl-x64@npm:0.33.5"
+  dependencies:
+    "@img/sharp-libvips-linuxmusl-x64": "npm:1.0.4"
   dependenciesMeta:
     "@img/sharp-libvips-linuxmusl-x64":
       optional: true
@@ -3249,6 +3527,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-wasm32@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-wasm32@npm:0.33.5"
+  dependencies:
+    "@emnapi/runtime": "npm:^1.2.0"
+  conditions: cpu=wasm32
+  languageName: node
+  linkType: hard
+
 "@img/sharp-wasm32@npm:0.34.3":
   version: 0.34.3
   resolution: "@img/sharp-wasm32@npm:0.34.3"
@@ -3272,6 +3559,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@img/sharp-win32-ia32@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-win32-ia32@npm:0.33.5"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "@img/sharp-win32-ia32@npm:0.34.3":
   version: 0.34.3
   resolution: "@img/sharp-win32-ia32@npm:0.34.3"
@@ -3282,6 +3576,13 @@ __metadata:
 "@img/sharp-win32-x64@npm:0.33.2":
   version: 0.33.2
   resolution: "@img/sharp-win32-x64@npm:0.33.2"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@img/sharp-win32-x64@npm:0.33.5":
+  version: 0.33.5
+  resolution: "@img/sharp-win32-x64@npm:0.33.5"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -16081,7 +16382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.7.2":
+"semver@npm:^7.6.3, semver@npm:^7.7.2":
   version: 7.7.2
   resolution: "semver@npm:7.7.2"
   bin:
@@ -16240,6 +16541,75 @@ __metadata:
     "@img/sharp-win32-x64":
       optional: true
   checksum: 10c0/4727fcf5e3e680f2f837f897c9fcff765a43a60c802ccb7064ab939b06318695e0d5d900039adb104370c1e675743bba16a514632193cbee64eae522270adc48
+  languageName: node
+  linkType: hard
+
+"sharp@npm:0.33.5":
+  version: 0.33.5
+  resolution: "sharp@npm:0.33.5"
+  dependencies:
+    "@img/sharp-darwin-arm64": "npm:0.33.5"
+    "@img/sharp-darwin-x64": "npm:0.33.5"
+    "@img/sharp-libvips-darwin-arm64": "npm:1.0.4"
+    "@img/sharp-libvips-darwin-x64": "npm:1.0.4"
+    "@img/sharp-libvips-linux-arm": "npm:1.0.5"
+    "@img/sharp-libvips-linux-arm64": "npm:1.0.4"
+    "@img/sharp-libvips-linux-s390x": "npm:1.0.4"
+    "@img/sharp-libvips-linux-x64": "npm:1.0.4"
+    "@img/sharp-libvips-linuxmusl-arm64": "npm:1.0.4"
+    "@img/sharp-libvips-linuxmusl-x64": "npm:1.0.4"
+    "@img/sharp-linux-arm": "npm:0.33.5"
+    "@img/sharp-linux-arm64": "npm:0.33.5"
+    "@img/sharp-linux-s390x": "npm:0.33.5"
+    "@img/sharp-linux-x64": "npm:0.33.5"
+    "@img/sharp-linuxmusl-arm64": "npm:0.33.5"
+    "@img/sharp-linuxmusl-x64": "npm:0.33.5"
+    "@img/sharp-wasm32": "npm:0.33.5"
+    "@img/sharp-win32-ia32": "npm:0.33.5"
+    "@img/sharp-win32-x64": "npm:0.33.5"
+    color: "npm:^4.2.3"
+    detect-libc: "npm:^2.0.3"
+    semver: "npm:^7.6.3"
+  dependenciesMeta:
+    "@img/sharp-darwin-arm64":
+      optional: true
+    "@img/sharp-darwin-x64":
+      optional: true
+    "@img/sharp-libvips-darwin-arm64":
+      optional: true
+    "@img/sharp-libvips-darwin-x64":
+      optional: true
+    "@img/sharp-libvips-linux-arm":
+      optional: true
+    "@img/sharp-libvips-linux-arm64":
+      optional: true
+    "@img/sharp-libvips-linux-s390x":
+      optional: true
+    "@img/sharp-libvips-linux-x64":
+      optional: true
+    "@img/sharp-libvips-linuxmusl-arm64":
+      optional: true
+    "@img/sharp-libvips-linuxmusl-x64":
+      optional: true
+    "@img/sharp-linux-arm":
+      optional: true
+    "@img/sharp-linux-arm64":
+      optional: true
+    "@img/sharp-linux-s390x":
+      optional: true
+    "@img/sharp-linux-x64":
+      optional: true
+    "@img/sharp-linuxmusl-arm64":
+      optional: true
+    "@img/sharp-linuxmusl-x64":
+      optional: true
+    "@img/sharp-wasm32":
+      optional: true
+    "@img/sharp-win32-ia32":
+      optional: true
+    "@img/sharp-win32-x64":
+      optional: true
+  checksum: 10c0/6b81421ddfe6ee524d8d77e325c5e147fef22884e1c7b1656dfd89a88d7025894115da02d5f984261bf2e6daa16f98cadd1721c4ba408b4212b1d2a60f233484
   languageName: node
   linkType: hard
 
@@ -19251,6 +19621,13 @@ __metadata:
   version: 3.22.4
   resolution: "zod@npm:3.22.4"
   checksum: 10c0/7578ab283dac0eee66a0ad0fc4a7f28c43e6745aadb3a529f59a4b851aa10872b3890398b3160f257f4b6817b4ce643debdda4fb21a2c040adda7862cab0a587
+  languageName: node
+  linkType: hard
+
+"zod@npm:4.0.5":
+  version: 4.0.5
+  resolution: "zod@npm:4.0.5"
+  checksum: 10c0/59449d731ca63849b6bcb14300aa6e2f042d440b3ed294b45c248519aec78780f85a5d1939a62c2ce82e9dc60afca77c8005e0a98d7517b0c2586d6c76940424
   languageName: node
   linkType: hard
 
