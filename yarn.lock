@@ -174,8 +174,8 @@ __metadata:
   linkType: hard
 
 "@astrojs/react@npm:^4.0.0":
-  version: 4.3.1
-  resolution: "@astrojs/react@npm:4.3.1"
+  version: 4.4.0
+  resolution: "@astrojs/react@npm:4.4.0"
   dependencies:
     "@vitejs/plugin-react": "npm:^4.7.0"
     ultrahtml: "npm:^1.6.0"
@@ -185,7 +185,7 @@ __metadata:
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
     react: ^17.0.2 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/78b2efb57ad3ccad54f8eaa68a45d890d1729ad5631893f5bcef3496c27a6f1071ad0a663d840ce39185f412d72e2bb66eecb3aadd0be38d1c63d267d2154c76
+  checksum: 10c0/7c4b582d4b2f76ffed9559e1f767fc2cc25a468435303361493e1a513fa48ca9fa1f9a844e3ceb18a5de5e75607bfd262742dc5d803077491a714729f87791a7
   languageName: node
   linkType: hard
 
@@ -7820,8 +7820,8 @@ __metadata:
   linkType: hard
 
 "astro@npm:^5.0.0":
-  version: 5.13.11
-  resolution: "astro@npm:5.13.11"
+  version: 5.14.0
+  resolution: "astro@npm:5.14.0"
   dependencies:
     "@astrojs/compiler": "npm:^2.12.2"
     "@astrojs/internal-helpers": "npm:0.7.3"
@@ -7891,7 +7891,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10c0/dfaf41fc474892f781e103403ec3b77b697f5a96172a7ab9c76734a48b47382ace13f9cce51859d9d6064c164dace004c8dd9af298d42d970bcad22931f1d6ed
+  checksum: 10c0/b87a5c46dc3c2ddf33ef665409e1f103f7d835f2d33c6441d0e0a0baf70c8fbdda91b94e41821bd4ef2df05c16ac2cd41b8b42d17f91690ea528ab4882acbceb
   languageName: node
   linkType: hard
 
